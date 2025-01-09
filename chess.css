@@ -1,0 +1,47 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    height: 320px;
+    width: 320px;
+    border: 1px solid black;
+    margin: 30px;
+     left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    
+    
+}
+.subcontainer
+{
+    height: 40px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    
+}
+.item
+{
+height: 40px;
+width: 40px;
+border: 1px solid black;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 35px;
+}
+
+.subcontainer:nth-child(odd) .item:nth-child(odd),
+.subcontainer:nth-child(even) .item:nth-child(even)
+{
+    background-color: black;
+    color: white;
+}
